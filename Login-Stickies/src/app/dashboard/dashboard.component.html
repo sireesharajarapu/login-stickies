@@ -1,0 +1,49 @@
+<div class="logout-btn">
+  <form (submit)="logout()">
+    <mat-card-actions>
+      <button mat-raised-button color="warn" type="submit">Wanna Logout?</button>
+    </mat-card-actions>
+  </form>
+</div>
+<div class="welcome">
+  <h1>Hey <ins>{{result.name}}!</ins> welcome to your personal dashboard</h1>
+</div>
+
+<div>
+  <form class="example-form" [formGroup]="newNotesForm" (ngSubmit)="addingNote()">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Enter your Note" formControlName="note">
+    </mat-form-field>
+    <div class="btn">
+      <button mat-raised-button color="primary">Submit</button>
+    </div>
+  </form>
+  <div *ngIf="editIndex !== null">
+    <div >
+      <button mat-raised-button class="save-btn"color="accent" (click)="saveNote()">Save</button>
+      <button mat-raised-button class="cancel-btn" color="warn" (click)="cancelEdit()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <h1>Your Notes</h1>
+  <div class="note-cards">
+    <div *ngIf="result.notes.length === 0" class="no-notes-message">
+      No Notes Yet! Add a new Note.
+    </div>
+    <mat-card *ngFor="let note of result.notes; let i = index" class="note-card">
+      <mat-card-content>
+        <p>{{ note }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="accent" (click)="editNote(i)">
+          Edit
+        </button>
+        <button mat-raised-button color="warn" (click)="deleteNote(i)">
+          Delete
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

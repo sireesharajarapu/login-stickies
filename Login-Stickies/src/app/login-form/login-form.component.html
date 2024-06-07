@@ -1,0 +1,16 @@
+<!-- Html From using Material UI and Reactive Forms for the Login page -->
+<form class="example-form" [formGroup]="loginForm" (ngSubmit)="proceedLogin()">
+    <h1 class="heading"> User Login</h1>
+    <mat-form-field class="example-full-width">
+        <mat-label>Email-Id</mat-label>
+        <input matInput placeholder="Enter your email id..." formControlName="email">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Enter your Password..." formControlName="password">
+    </mat-form-field>
+    <div class="example-button-row">
+        <button mat-raised-button color="primary">Login</button><br><br>
+        <a routerLink="/register" mat-raised-button color="accent">Are you a new user?</a>
+    </div>
+</form>

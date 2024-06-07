@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "email": "eswar@gmail.com",
+      "name": "Eswar",
+      "mobile_no": "9999999999",
+      "password": "Abcd@1234",
+      "notes": [
+        "Noteone",
+        "Note two",
+        "Note Three",
+        "Nice daa"
+      ],
+      "id": 1
+    },
+    {
+      "email": "sample@example.com",
+      "name": "Sample",
+      "mobile_no": "9999999999",
+      "password": "ABCDabcd@1",
+      "notes": [
+        "hi",
+        "how are you",
+        "eswar?"
+      ],
+      "id": 2
+    },
+    {
+      "email": "eswar1@gmail.com",
+      "name": "sdfsf",
+      "mobile_no": "dsfssdsfsfsfsf",
+      "password": "Eswar@1234",
+      "notes": [],
+      "id": 3
+    }
+  ]
+}

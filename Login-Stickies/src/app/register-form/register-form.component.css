@@ -1,0 +1,23 @@
+.heading{
+    padding-left: 10rem;
+    padding-bottom: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 200px;
+    background-color:rgba(184, 109, 109, 0.525);
+    padding: 5rem;
+    border-radius: 25px;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .mat-mdc-radio-button ~ .mat-mdc-radio-button {
+    margin-left: 16px;
+  }

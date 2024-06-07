@@ -1,0 +1,24 @@
+<form class="example-form" [formGroup]="registerForm" (ngSubmit)="proceedRegister()">
+    <h1 class="heading">User Registration</h1>
+    <mat-form-field class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Enter your name..." formControlName="name">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Email Id</mat-label>
+        <input matInput placeholder="Enter your email id..." formControlName="email">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Mobile Number</mat-label>
+        <input matInput placeholder="Enter your mobile number..." formControlName="mobile_no">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input matInput placeholder="Enter your Password..." formControlName="password">
+    </mat-form-field>
+    <div class="example-button-row">
+        <button mat-raised-button color="primary">Submit</button><br><br>
+        <a routerLink="/login" mat-raised-button color="accent">Back to Login</a>
+    </div>
+</form>
+<br><br><br>

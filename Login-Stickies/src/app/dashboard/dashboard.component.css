@@ -1,0 +1,140 @@
+.welcome{
+    text-align: center;
+    padding: 5rem;
+}
+.logout-btn{
+  position: absolute; /* Position the button absolutely */
+  top: 10px; /* Adjust the top position as needed */
+  right: 10px;
+}
+
+/* Style for the save button */
+.save-btn{
+  margin-left:12rem ;
+  margin-top: 1rem;
+}
+.cancel-btn{
+  margin-left:1rem;
+  margin-top: 1rem;
+}
+
+.example-form {
+    min-width: 200px;
+    max-width: 500px;
+    width: 100%;
+    margin-left: 12rem;
+  }
+  
+  .example-full-width {
+    width: 170%;
+  }
+  
+  .no-notes-message {
+    text-align: center;
+    background-color: #f0f0f0; /* Gray background color */
+    color: #000; /* Black font color */
+    padding: 30px;
+    font-weight: bolder;
+    font-size: large;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Card-style shadow */
+    margin: 20px auto; /* Center horizontally */
+    max-width: 300px; /* Adjust the maximum width as needed */
+  }
+
+  .no-notes-message:hover{
+    transform: translateY(-4px); /* Lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+    background-color: #DCDCDC; /* Background color on hover */
+  }
+  
+  
+ /* dashboard.component.css */
+
+ h1 {
+  font-size: 32px; /* Increase font size */
+  color: #333; /* Text color */
+  margin-bottom: 20px; /* Add more bottom margin for spacing */
+  text-align: center; /* Center-align the heading */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 3px; /* Add more letter spacing */
+  font-weight: bold; /* Make the text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+  background: linear-gradient(45deg, #007bff, #E91E63); /* Gradient background */
+  -webkit-background-clip: text; /* Clip text to background */
+  background-clip: text; /* Clip text to background */
+  color: transparent; /* Hide the text */
+}
+
+/* Center the heading horizontally and vertically */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px; /* Adjust the height as needed */
+}
+.note-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Adjust the gap between cards */
+  justify-content: space-between; /* Distribute cards evenly */
+  margin:3rem;
+}
+.note-card {
+  flex-basis: calc(33.33% - 16px); /* Set three cards in a row with some gap */
+  max-width: calc(33.33% - 16px); /* Adjust the maximum width of each card */
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: #C0C0C0; /* Default background color for the card */
+  border: 1px solid #ddd; /* Border for the card */
+  border-radius: 8px; /* Rounded corners for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for the card */
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s; /* Add smooth transitions */
+}
+
+
+/* Add hover effect */
+.note-card:hover {
+  transform: translateY(-4px); /* Lift the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+  background-color: #DCDCDC; /* Background color on hover */
+  font-weight: bolder;
+}
+
+.note-card mat-card-content {
+  color: #333; /* Text color within the card */
+}
+
+.note-card mat-card-actions {
+  justify-content: space-between; /* Align buttons to the left and right */
+}
+
+.note-card button {
+  padding: 6px 12px;
+}
+
+.note-card button:first-child { /* Edit button background color */
+  color: rgb(255, 255, 255); /* Edit button text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.note-card button:first-child:hover {
+  background-color: #e31266; /* Edit button background color on hover */
+  color: black;
+}
+
+.note-card button:last-child { /* Delete button background color */
+  color: #fff; /* Delete button text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.note-card button:last-child:hover {
+  background-color: #dc3546; /* Delete button background color on hover */
+  color: black;
+}
